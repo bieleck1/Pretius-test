@@ -39,7 +39,9 @@ public class PretiusTest {
                 }
             }
 
-            System.out.println("Suma kwot zapisanych w pliku: " + amount + "PLN");
+            System.out.printf("Suma kwot zapisanych w pliku: ");
+            System.out.printf("%.0f", amount);
+            System.out.println("PLN");
             in.close();
         } catch (IOException e) {
             System.out.println("Problem: " + e);
